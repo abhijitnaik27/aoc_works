@@ -1,10 +1,10 @@
 OBJ = main.o
 
-%.o : %.c
-	gcc -c $^
+%.o : %.cpp
+	g++ -c -g $^
 
 target: $(OBJ)
-	gcc -o $@ $^
+	g++ -o $@ $^
 	
 clean:
 	rm -rf $(OBJ) target
