@@ -1,7 +1,7 @@
 OBJ = main.o
 
-%.o : %.cpp
-	g++ -c -g $^
+%.o : %.c
+	g++ -Wall -c -g $^
 
 target: $(OBJ)
 	g++ -o $@ $^
